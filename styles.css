@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+main {
+  font-family: system-ui;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-color: orangered;
+}
+
+.scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 1s ease;
+}
+
+.scena1 {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btnstart {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sprite {
+  width: 288px;
+  height: 288px;
+  background-image: url("img/snorlaxprite.png");
+  background-repeat: no-repeat;
+  animation: playSprite 2s steps(9) infinite;
+}
+
+@keyframes playSprite {
+  100% {
+    background-position: -2592px;
+  }
+}
+
+.selection {
+  display: flex;
+  gap: 20px;
+}
