@@ -35,6 +35,11 @@ main {
   visibility: visible;
 }
 
+.scena2 {
+  /* opacity: 1;
+  visibility: visible; */
+}
+
 .btnstart {
   padding: 10px 20px;
   margin-top: 20px;
