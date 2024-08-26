@@ -36,8 +36,6 @@ main {
 }
 
 .scena2 {
-  /* opacity: 1;
-  visibility: visible; */
 }
 
 .btnstart {
@@ -64,4 +62,13 @@ main {
 .selection {
   display: flex;
   gap: 20px;
+}
+
+.scena3 img {
+  width: 150px;
+}
+
+.track {
+  width: 50%;
+  border: 1px solid black;
 }

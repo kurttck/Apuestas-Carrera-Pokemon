@@ -20,7 +20,7 @@
         <h1>Escoge a tu pokemon ganador</h1>
         <div class="selection">
           <div>
-            <a href="" class="flex items-center flex-col"
+            <a href="" class="flex items-center flex-col" id="pikachu"
               ><img
                 class="w-[60px]"
                 src="https://img.pokemondb.net/sprites/black-white/anim/normal/pikachu.gif"
@@ -30,7 +30,7 @@
             </a>
           </div>
           <div>
-            <a href="" class="flex items-center flex-col"
+            <a href="" class="flex items-center flex-col" id="nidorino"
               ><img
                 src="https://img.pokemondb.net/sprites/black-white/anim/normal/nidorino.gif"
                 alt="Nidorino"
@@ -39,7 +39,7 @@
             </a>
           </div>
           <div>
-            <a href="" class="flex items-center flex-col"
+            <a href="" class="flex items-center flex-col" id="bulbasaur"
               ><img
                 class="w-[50px]"
                 src="https://img.pokemondb.net/sprites/black-white/anim/normal/bulbasaur.gif"
@@ -51,8 +51,19 @@
         </div>
       </section>
       <section class="scena3 scene">
-        <h1>Escena 2</h1>
-        <p>Tengo mucha hambre</p>
+        <h1>Escena 3</h1>
+        <div class="track">
+          <img src="./img/pikachucard.png" id="car1" class="pikachu" />
+        </div>
+        <div class="track">
+          <img src="./img/nidorinocard.png" id="car2" class="nidorino" />
+        </div>
+        <div class="track">
+          <img src="./img/bulbasaurcard.png" id="car3" class="bulbasaur" />
+        </div>
+        <button id="starRace" class="btnstart">Iniciar Carrera</button>
+
+        <div id="result"></div>
       </section>
     </main>
     <script src="script.js"></script>
